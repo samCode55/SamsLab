@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<style> 
+
+	:root {
+		--codeBg: #304a25;
+		--codeTx: #b7e326;
+		--background: #2b2b2b;
+		--secBg: #baf44f39 ;
+		--thirdBBackground: rgba(222, 198, 14, 0.65);
+		--fourthBg: #740995b8;
+		--border: #56b914;
+		--secBorder: #a9f123;
+		--thirdBorder: #ffea00;
+		--fourthBorder: #9306f7;
+		--textColor: #fff;
+		--worldText: rgb(177, 21, 238);
+		--charText: rgb(233, 222, 12);
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: var(--background);
+		color: var(--textColor);
+		margin: 0px;
+	}
+
+	section {
+		padding: 5px;
+		border: solid var(--border) 3px;
+		border-radius: 10px;
+		margin: 10px;
+	}
+
+	section.main {
+		margin-top: 15px;
+		border:var(--secBorder) solid 3px;
+	}
+
+
+	code.highlight {
+		background: var(--codeBg);
+		color: var(--codeTx);
+		border-style: none;
+		border-radius: 5px;
+		padding: 2px;
+		font-size: 0.95rem;
+	}
+
+	li {
+		display: grid;
+        grid-template-columns: repeat(auto, minmax(160px,1fr));
+        gap: 10px;
+		font-size: 20px;
+		padding: 10px;
+		list-style: none;
+		margin: 10px;
+		margin-right: 1.2rem; 
+		border: var(--secBorder) dotted;
+		border-radius: 10px;
+		text-align: center;
+		transform:translateX(-13.5px);
+		background: rgba(96, 176, 74, 0.354);
+	}
+
+	.work {
+		margin-left: 2rem;
+		padding:10px;
+		padding-top: 2px;
+		border-left: solid 4px var(--secBorder);
+		border-radius: 4px;
+		background-color: var(--secBg);
+	}
+
+	.work-title {
+		margin-bottom: 0px;
+	}
+
+	.sub {
+		font-weight:600;
+		font-size:14px; 
+		color:#acacac;
+		margin-top: 0;
+		margin-bottom: 15;
+	}
+
+	.extra-info {
+		text-align: center;
+		color:rgb(149, 153, 156);
+	}
+
+	.info {
+		padding-left: 1rem;
+		margin-bottom: 1rem;
+		margin-top: 0.2rem;
+		max-width: 320px;
+	}
+
+	.card-list {
+		display: flex;
+		gap: 15px;
+		overflow-x: auto;
+		padding: 10px;
+	}
+
+	.char, .worldbuilding {
+		flex: 0 0 350px;
+		border-radius: 10px;
+		border: 3px dotted;
+		
+		scroll-snap-align: start;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-weight:500;
+		
+		scrollbar-width:thin;
+		scroll-snap-type: x mandatory;
+	}
+
+	.char {
+		border-color: var(--thirdBorder);
+		background: var(--thirdBBackground);
+		color: var(--charText);
+	} 
+
+	.worldbuilding {
+		border-color: var(--fourthBorder); 
+		background: var(--fourthBg);
+		color: var(--worldText);
+
+	}
+
+	.name {
+		padding-left: 10px;
+		margin-top: 1rem;
+		margin-bottom: 6px;
+	}
+
+	article {
+		max-width: 450px;
+	}
+
+	#works-head {
+		margin-left: 40px;
+	}
+
+</style>
+
+<head>
+
+<title>Sam's Lab</title>
+
+</head>
+
+<body>
+
+<header>
+	<p style="margin: 10px">
+		On this website i will be exploring some of my personal projects.
+	</p>
+
+	<section>
+
+	<h2>About Me</h2>
+
+	<p>
+		I am an 18 year old Brazilian with a passion for storywriting.
+		My obsession with writing started in the middle of the pandemic,
+		where I met some people online that changed the course of my life 
+		forever. 
+	</p>
+	<p>
+		My first attempt at a big standalone story was created at around
+		the middle of 2023. It won't ever see the light of day, but I can
+		still remember it vividly. Aahh...It is so vivid, in fact, that
+		I am still repulsed. But hey, it was a good attempt, I got almost
+		40 pages out of it!
+	</p>
+	
+	</section>
+
+</header>
+
+<main>
+
+	<section>
+
+	<h2>My Goals</h2>
+
+	<p>
+		<code class="highlight">I plan on going big someday.</code> That may or may not happen. As an
+		openly Christian man, I will say that whatever happens <code class="highlight">is the will 
+		of God.</code>
+	</p>
+
+	<p>
+		As someone who has grown up with movies and TV shows, you could
+		say that one of my biggest dreams is of course getting my works 
+		adapted into either of those mediums. 
+	</p>
+
+	<p>
+		But, perhaps one of my most obscure secrets is wanting to support
+		a few certain gaming masterminds to produce their storylines.
+		<code class="highlight">
+			Wink wink, Kojima and Pondsmith.
+		</code>
+	</p>
+	</section>
+
+	<section>
+		<h2>Experience</h2>
+
+		<ul>
+			<li>5+ years writing</li>
+			<li>Assisted in the artistic view of 
+				a screenwriter friend's project!</li>
+			<li>Worked on a popular Persona fanfiction
+				in Wattpad
+			</li>
+			<li>Won 1st place in a local essay comp during 
+				middle school
+			</li>
+		</ul>
+	</section>
+
+	<section class="main">
+
+		<h2 id="works-head">Works</h2>
+
+		<p style="margin-left: 40px">
+			And finally, I get to tell you about what I have 
+			<span style="font-style:italic;">actually</span>
+			worked on.
+		</p>
+
+		<div> 
+		<article class="work">
+			<h2 class="work-title">Dead Men's Tales — Book I: Maneater</h2>
+
+			<p class="sub">
+			Or just Maneater for short.
+			</p>
+
+			<p class="info">
+			Maneater is my current Work in Progress. It follows the stories 
+			of three main characters: <code class="highlight">Christopher, 
+			Nicole and Clyde.</code> It takes place in a dystopian early-
+			twentieth century city called <code class="highlight">Grand
+			Guinevere.</code> When Nicole, Christopher's sister, is kidnapped
+			by a gang who runs a huge part of the city, he is determined
+			to do anything it takes to <code class="highlight">get her back,
+			no matter the cost.</code>
+			</p>
+			<p class="info">
+			When I first started writing Maneater, I was a completely different
+			person. But throughout the months, all the sweat and brainstorming
+			I've gone through with this work, I've grown into a far better writer
+			than ever before.
+			</p>
+			<p class="info">
+			I would easily say that the little universe I made for Maneater — or
+			for the Dead Men's Tales franchise in general — feels like an accomplishment
+			for me. 
+			</p>
+		</article>
+
+			<p class="hint">
+				As of <code class="highlight">09/2026,</code> the information released about the novel goes as follows:
+			</p>
+
+			<div class="card-list">
+
+			<article class="char">
+					<h2 class="name">Christopher Linchpin</h2>
+					
+					<p class="info">
+					One of the main focuses of the story. Christopher Linchpin is 
+					a baker who goes on a journey through the deepest parts of 
+					Grand Guinevere to find and recover the only family member 
+					he has: his sister,	Nicole.
+					</p>
+
+					<p class="info">
+					His determination is what moves the story forward. Those who 
+					are familiar with the underworld of crime in Grand Guinevere
+					may not know the name; but they soon will.
+					</p>
+			</article>
+
+			<article class="char">
+					<h2 class="name">Nicole Linchpin</h2>
+
+					<p class="info">
+					Christopher's younger sister. Nicole goes through a series of
+					events that puts her in the hands of a gang of marginalized 
+					criminals with little regard to ethics. 
+					</p>
+
+					<p class="info">
+					Nicole's quick thinking	is what brings all of the characters 
+					together to a standoff:	one event that decides the rules of 
+					an entire district. 
+					</p>
+
+					<p class="info">
+					Will Nicole's worldview bend to favor her survival?
+					</p>
+			</article>
+
+			<article class="char">
+				<h2 class="name">Clyde</h2>
+					<p class="info">
+					The unfortunate underdog that followed enough orders to earn a spot. 
+					Clyde's life is harder than that of any other criminal. A well-respected
+					man among the ranks of the Steamrollers, Clyde is a figure that stands
+					out if compared to his peers; His ability to keep up an act for however
+					long it requires him, alongside his loyalty and fear of the time passing
+					is what makes him be who he is.
+					</p>
+
+					<p class="info">
+					The sins of the father...shall not be passed down.
+					</p>
+			</article>
+
+			<article class="char">
+					<h2 class="name">Solomon</h2>
+
+					<p class="info">
+					Solomon is a force that exists to rival that of orderly conduct.
+					Born amidst the slums of Grand Guinevere, the titan, leader of
+					the Ferocious Steamrollers, is the perfect product of what Grand 
+					Guinevere has to offer. Characterized by his absurdly tall stature, 
+					rectangular face and combed thin gray hair, he is a figure many fear
+					in Grand Guinevere, within reason.
+					</p>
+
+					<p class="info">
+					If you play  by the rules, you too become a ruler.
+					</p>
+			</article>
+
+			</div>
+
+			<div class="card-list">
+				<article class="worldbuilding">
+				<h2 class="name">Grand Guinevere</h2>
+
+				<p class="info">
+					Established in 1809, Grand Guinevere — formerly just Guinevere — 
+					is a sovereign state. It stands as one of the most technologically 
+					advanced powers in the known world, widely regarded, at least from 
+					the outside, as the pinnacle of modern industrial civilization.
+				</p>
+
+				<p class="info">
+					The city’s economy is built almost entirely on technological dominance. 
+					Grand Guinevere exports machinery, mechanisms, and industrial innovations 
+					to the rest of the world, while importing skilled workmanship to sustain 
+					its ever-growing production needs. Outside scholars are rarely warmly 
+					welcomed; labor and utility matter far more than theory in the eyes of the
+					average capitalist. The city is, after all, the birthplace of the steam engine; 
+					a fact its rulers and entrepreneurs never let the world forget.
+				</p>
+
+				<p class="info">
+					Despite its immense wealth, Grand Guinevere is anything but equal.
+					Most of the prosperity generated within its walls flows directly into the
+					hands of the depths of the black market, celebrated inventors, and above all, 
+					powerful entrepreneurs. To keep revolutions at bay, many entrepreneurs keep part 
+					of their funds and flow of cash directed at the production of plays and music they 
+					approve of, redirecting the attention of the peoples to something other than their 
+					reality.
+				</p>
+
+				<p class="info">
+					This imbalance fuels constant unrest. Famine, desperation, and unchecked 
+					inequality make violence a daily reality. Many people may turn to black
+					markets, gangs, and other criminal enterprises as their only means of 
+					survival or social advancement. In Grand Guinevere, morality is a luxury 
+					few can afford. A proper education system as understood by you and me is 
+					mostly unheard of, being heavily influenced by the state of to-date technological
+					advancements.
+				</p>
+			</article>
+			</div>
+
+			<p class="extra-info">
+			Original characters; any resemblances to real people are completely
+			accidental. Not inspired by real-life events. 
+			</p>
+		
+		</div>
+	</section>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<!--<h1 style="margin-top: 10000px;">CREATIVE WORKS!!!:</h1>
+
+
+	
+	<h2>FICTION:</h2>
+	<h3>DEAD MEN'S TALES — BOOK I: MANEATER</h3>
+	<p>darling i am OBSESSED with this story for the past year, but i cant bother spending my energy to write about this one at the current moment. who cares</p>
+	<h3>PERSONA: THREADS OF DESTINY</h3>
+	<p>quite possibly one of the fanfictions of all time. perhaps the potential man of SMT fanfictions...needless to say, unfinished, outdated and probably not going to be touched anymore. but who knows</p>
+
+
+	
+	<h2>ONESHOTS:</h2>
+	<h3>BUFFALO'S INVASION</h3>
+	<p>lots of fun writing this oneshot, featuring Buffalo taking down an outpost. inspired by the assault on bill williamson's fortress in the start of red dead redemption, i can tell you that</p>
+	<h3>UNNAMED VAMPIRE-MAFIA ONESHOT</h3>
+	<p>as much as i am proud of this *minute* oneshot, i know my ass is not touching vampires again for a few years. not after my first steampunk project, oh Lord...</p>
+
+
+
+	<h2>PLANNED STORIES:</h2>
+	<h3>DEAD MEN'S TALES — BOOK II: BUFFALO</h3>
+	<p>this story will be the sequel (kind of) to Maneater and take the mantle from the previous work. it'll explore Raging Buffalo and his ascension into a Wild West myth, and show the consequences of a system who marginalizes anyone it doesn't consider worthy because of social constructs such as race. pretty brutal, more than its prequel, for sure.</p>
+	<h3>DEAD MEN'S TALES — SUBSTORY I: CLYDE'S DIARY</h3>
+	<p>Clyde's diary has just so happened to pop into my mind as i wrote this, to be honest. BUT it could give the readers more info and backstory about a character who is definitely going to be a fan-favorite by the time Maneater is officially published and standing on its own two feet.</p>
+
+
+
+	<br><br>-->
+</body>
+</html>
