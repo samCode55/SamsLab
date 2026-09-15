@@ -58,7 +58,7 @@
 
 	li {
 		display: grid;
-        grid-template-columns: repeat(auto, minmax(160px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
         gap: 10px;
 		font-size: 20px;
 		padding: 10px;
@@ -89,8 +89,8 @@
 		font-weight:600;
 		font-size:14px; 
 		color:#acacac;
-		margin-top: 0;
-		margin-bottom: 15;
+		margin-top: 0px;
+		margin-bottom: 15px;
 	}
 
 	.extra-info {
