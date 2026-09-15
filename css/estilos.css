@@ -5,13 +5,16 @@
 		--secBg: #baf44f39 ;
 		--thirdBBackground: rgba(222, 198, 14, 0.65);
 		--fourthBg: #740995b8;
+        --fifthBg: #bb241486;
 		--border: #56b914;
 		--secBorder: #a9f123;
 		--thirdBorder: #ffea00;
 		--fourthBorder: #9306f7;
+        --fifthBorder: #c91400;
 		--textColor: #fff;
 		--worldText: rgb(177, 21, 238);
 		--charText: rgb(233, 222, 12);
+
 	}
 
 	* {
@@ -102,7 +105,7 @@
 		padding: 10px;
 	}
 
-	.char, .worldbuilding {
+	.char, .worldbuilding, .faction {
 		flex: 0 0 350px;
 		border-radius: 10px;
 		border: 3px dotted;
@@ -125,8 +128,13 @@
 		border-color: var(--fourthBorder); 
 		background: var(--fourthBg);
 		color: var(--worldText);
-
 	}
+
+    .faction {
+        border-color: var(--fifthBorder);
+        background: var(--fifthBg);
+        color: var(--fifthBorder);
+    }
 
 	.name {
 		padding-left: 10px;
