@@ -149,3 +149,28 @@
 	#works-head {
 		margin-left: 40px;
 	}
+
+	#warnLabel {
+		font-size: 15px;
+		margin: 10px;
+		text-align: center;
+		padding: 20px;
+		border: solid 2px black;
+		background-color: black;
+		color: #b5b5b5;
+		border-radius: 5px;
+	}
+
+	footer {
+		padding: 40px;
+		background-color: rgb(23, 58, 58);
+	}
+
+	.footInfo {
+		border: solid 2px;
+		border-color:rgb(26, 92, 92);
+		background-color: rgb(26, 92, 92);
+		border-radius: 10px;
+		padding: 10px;
+		text-align: center;
+	}
