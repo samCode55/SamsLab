@@ -1,20 +1,24 @@
 	:root {
-		--codeBg: #304a25;
-		--codeTx: #b7e326;
+		
 		--background: #2b2b2b;
+		--codeBg: #304a25;
 		--secBg: #baf44f39 ;
-		--thirdBBackground: rgba(222, 198, 14, 0.65);
-		--fourthBg: #740995b8;
-        --fifthBg: #bb241486;
+		--thirdBBackground: rgba(105, 196, 35, 0.65); /*char*/
+		--fourthBg: #099548b8; /*world*/
+        --fifthBg: #ecef3a88; /*faction*/
+		
 		--border: #56b914;
 		--secBorder: #a9f123;
-		--thirdBorder: #ffea00;
-		--fourthBorder: #9306f7;
-        --fifthBorder: #c91400;
+		--thirdBorder: #46d214;
+		--fourthBorder: #0db157f6;
+        
+		--fifthBorder: #bde10b; /*doubles as faction text*/
+		
 		--textColor: #fff;
-		--worldText: rgb(177, 21, 238);
-		--charText: rgb(233, 222, 12);
-
+		--codeTx: #b7e326;
+		--worldText: rgb(21, 238, 93);
+		--charText: rgb(84, 232, 61);
+		
 	}
 
 	* {
@@ -27,6 +31,9 @@
 		margin: 0px;
 	}
 
+	a {
+		text-decoration: none;
+	}
 	section {
 		padding: 5px;
 		border: solid var(--border) 3px;
@@ -173,4 +180,12 @@
 		border-radius: 10px;
 		padding: 10px;
 		text-align: center;
+	}
+
+	#contactInfo {
+		border: none;
+		border-bottom: 2px solid black;
+		border-radius: 0px;
+		border-color: rgb(48, 120, 120);
+		font-weight: bold;
 	}
