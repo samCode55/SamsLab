@@ -189,3 +189,15 @@
 		border-color: rgb(48, 120, 120);
 		font-weight: bold;
 	}
+
+	#contactInfo a {
+		background: rgb(48, 120, 120);
+		color: white;
+		padding: 2px 4px 2px 4px;
+		border: none;
+		border-radius: 5px;
+	}
+
+	.italic { /*lol theres definitely a better way to do this but i cant bother rn.*/
+		font-style: italic;
+	} 
