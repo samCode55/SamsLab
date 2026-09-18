@@ -34,11 +34,16 @@
 	a {
 		text-decoration: none;
 	}
+	
 	section {
 		padding: 5px;
 		border: solid var(--border) 3px;
 		border-radius: 10px;
-		margin: 10px;
+		margin: 20px 50px;
+	}
+
+	#top-info {
+		margin: 0px 50px;
 	}
 
 	section.main {
@@ -102,7 +107,7 @@
 		padding-left: 1rem;
 		margin-bottom: 1rem;
 		margin-top: 0.2rem;
-		max-width: 320px;
+		max-width: 100%;
 	}
 
 	.card-list {
@@ -113,16 +118,22 @@
 	}
 
 	.char, .worldbuilding, .faction {
-		flex: 0 0 350px;
+		flex: 0 0 clamp(300px, 60vw, 800px);
 		border-radius: 10px;
 		border: 3px dotted;
 		
+		max-width: 500px;
+
 		scroll-snap-align: start;
 		font-family: Georgia, 'Times New Roman', Times, serif;
 		font-weight:500;
 		
-		scrollbar-width:thin;
+		scrollbar-width:auto;
 		scroll-snap-type: x mandatory;
+	}
+
+	.worldbuilding, .faction {
+		max-width: 800px ;
 	}
 
 	.char {
